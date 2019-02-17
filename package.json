@@ -1,0 +1,27 @@
+{
+  "name": "event-booking-project",
+  "version": "1.0.0",
+  "description": "Tutorial for creating a event-booking app with React.js, GraphQl, Node.js, MongoDB 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalo10/event-booking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzalo10/event-booking/issues"
+  },
+  "homepage": "https://github.com/gonzalo10/event-booking#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
