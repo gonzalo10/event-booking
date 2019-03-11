@@ -72,11 +72,22 @@ app.use(
             date: new Date(args.eventInput.date),
             creator: '5c857cb82385cf0e07881698'
           });
+          let createdEvent;
           return event
             .save()
             .then(result => {
-              console.log(result);
-              return { ...result._doc, _id: result._doc._id.toString() };
+              createdEvent = {...result._doc, _id: result._doc._id.toString()} 
+              return User.findById('5c857cb82385cf0e07881698')
+            })
+            .then(user=> {
+              if (user) {
+                throw new Error('User exists already.');
+              }
+              user.createdEvents.push(event);
+              return user.save();
+            })
+            .then(result => {
+              return createdEvent;
             })
             .catch(err => {
               console.log(err);
