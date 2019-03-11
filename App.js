@@ -80,8 +80,8 @@ app.use(
               return User.findById('5c857cb82385cf0e07881698')
             })
             .then(user=> {
-              if (user) {
-                throw new Error('User exists already.');
+              if (!user) {
+                throw new Error('User not found.');
               }
               user.createdEvents.push(event);
               return user.save();
