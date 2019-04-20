@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAIA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAC1B",
-    "sources": [
-        "ManageUsers.scss"
-    ],
-    "names": [],
-    "file": "ManageUsers.css"
-}
