@@ -1,0 +1,32 @@
+$PrimaryColor: #FFD306;
+$SecondaryColor: black;
+$ThirdColor:#FFA000;
+
+.AddUser {
+    display: flex;
+    justify-content: center;
+
+    Button {
+        background-color: $PrimaryColor;
+        color: $SecondaryColor;
+        border: 1px solid transparent;
+    }
+
+    Button:hover {
+        background-color: $ThirdColor;
+        color: $SecondaryColor;
+        border: 1px solid transparent;
+    }
+    Button:focus {
+        background-color: $ThirdColor;
+        color: $SecondaryColor;
+        border: 1px solid transparent;
+    }
+}
+.Form {
+    display: flex;
+}
+.Close {
+    display: flex;
+    justify-content: space-between;
+}

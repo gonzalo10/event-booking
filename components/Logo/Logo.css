@@ -1,0 +1,18 @@
+.Logo {
+  background-color: #FFD306;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.Logo img {
+  height: 100%;
+}
+/*# sourceMappingURL=Logo.css.map */
